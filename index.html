@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <title>HR Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	  <link rel="stylesheet" href="fonts.css" />
+	  <link rel="stylesheet" type="text/css"  href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/sidemenu.css"/>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/side-menu.js"></script>
+    <!-- data table script -->
+    <script type="text/javascript" src="js/bootstrap-select.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+  </head>
+   <body>
+<!-- Top Header Start-->
+<div class="top_header">
+  <div class="container">
+    <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                        <div class="left_logo">
+                                <a href="#"> <img src="images/DBSlogo.jpg">&nbsp;</a>
+                        </div>
+                </div>
+                <div class="col-md-5 col-lg-5 col-sm-6 col-xs-6">
+                    <div class="right_menu">
+                        <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav navbar-right">
+                                      <li><a href="#" style="color:cornflowerblue">Dashboard</a></li>
+                                      <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">DBS HR User  <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Profile</a></li>
+                                                <li><a href="#">Change Password</a></li>
+                                                <li><a href="#">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div><!-- /.navbar-collapse -->
+                            </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-1 col-lg-1 col-sm-6 col-xs-6">
+                    <div class="menu_icon">
+                        <button type="button" id="sidebarCollapse" class="menu_btn">
+                            <svg class="svg-inline--fa fa-bars fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <i class="fas fa-bars"></i> -->
+                            <span>Menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+  </div>
+
+</div>
+
+<div class="wrapper">
+  <nav id="sidebar" class="mCustomScrollbar _mCS_1 mCS-autoHide" style="overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+              <div id="dismiss">
+                  <i class="glyphicon glyphicon-arrow-right"></i>
+              </div>
+              <div class="sidebar-header">
+                  <div class="menu_logo">
+                      <img src="images/fhpl-logo.png" class="img-responsive mCS_img_loaded">
+                  </div>
+              </div>
+              <ul class="list-unstyled components">
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-users" aria-hidden="true"></i> My Ecard Employees</a></li>
+                <li><a href="#"> <i class="fa fa-address-card-o" aria-hidden="true"></i> Ecard</a></li>
+                <li><a href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> ClaimsHR</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Claim Statistics</a></li>
+                <li><a href="#">MIS MemberDetails</a></li>
+                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li></ul>
+
+          </div></div>
+        </nav>
+</div>
+<!-- Top Header End -->
+
+<!-- Body Section Start -->
+<div class="body_section">
+  <div class="container">
+    <div class="header-border">
+    <div class="row">
+      <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+        <div class="left_buttons">
+          <i class="fa fa-home" aria-hidden="true"></i> <span>/   HR  Dashboard</span>
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12">
+        <div class="right_buttons">
+          <ul>
+            <li><a href="" class="network">Network Hosp</a></li>
+            <li><a href="" class="ecard">E-Card</a></li>
+            <li><a href="" class="claims">Claims</a></li>
+            <li><a href="" class="memberdetail">Member Details</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Dashboard Boxes start-->
+  <div class="dashboard_boxes">
+    <div class="row">
+      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12">
+        <div class="networkhos">
+        <div class="leftlogo"><img src="images/shareit-icon.png" /></div>
+        <div class="rightpart">
+        <span class="number">200</span>
+        <span class="headertitle">Network Hospital</span>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 padding-left">
+        <div class="hrauser">
+        <div class="leftlogo"><img src="images/hrausage.png" /></div>
+        <div class="rightpart">
+        <span class="number">234</span>
+        <span class="headertitle">HRA Usage User</span>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 padding-left">
+        <div class="employeeactive">
+        <div class="leftlogo"><img src="images/employeeactive.png" /></div>
+        <div class="rightpart">
+        <span class="number">300</span>
+        <span class="headertitle">Employee Active Members</span>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-12 padding-left">
+        <div class="employeeinactive">
+        <div class="leftlogo"><img src="images/shareit-icon.png" /></div>
+        <div class="rightpart">
+        <span class="number">42</span>
+        <span class="headertitle">Employee In Active Members</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Dashboard Boxes End -->
+
+<!-- Claims Utilization Start -->
+<div class="claims-uti">
+<h1>Claims Utilization</h1>
+<div class="claim_box">
+<div id="container" style="min-width: 310px; height: 350px; margin: 0 auto"></div>
+</div>
+</div>
+<!-- Claims Utilization End -->
+<!-- Member Report Start -->
+<div class="member-report">
+<h1>Member Report   <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#active">ACTIVE</a></li>
+    <li><a data-toggle="tab" href="#deactive">DEACTIVE</a></li>
+    </ul></h1>
+<div class="member_box">
+  <div class="tab-content">
+      <div id="active" class="tab-pane fade in active">
+        <div id="container1" style="min-width: 310px; height: 350px; margin: 0 auto"></div>
+</div>
+      <div id="deactive" class="tab-pane fade">
+        <div id="container2" style="min-width: 310px; height: 350px; margin: 0 auto"></div>
+</div>
+
+    </div>
+  </div>
+</div>
+<!-- Member Report End -->
+
+<!-- Claim Statistics Report Start -->
+<div class="claimstati">
+<h1>Claims Statistical Report
+<div class="claim_select">
+<select class="selectpicker">
+  <option>2015</option>
+  <option>2016</option>
+  <option>2017</option>
+  <option>2018</option>
+</select>
+</div>
+</h1>
+<div class="claimstati-box">
+  <div id="container3" style="min-width: 310px; height: 350px; margin: 0 auto"></div>
+
+</div>
+</div>
+<!-- Claim Statistics Report End -->
+
+  </div>
+</div>
+<!-- Body Section End -->
+
+  <div class="footer-bottom">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <p>An ISO 9001:2008 Certified TPA---FHPL is the first TPA in the country to get certified for ISO/IEC 27001:2013 (Information Security Management System)</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!-- side menu script -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script type="text/javascript">
+Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: [
+            '2015',
+            '2016',
+            '2017',
+            '2018'
+        ],
+        crosshair: true
+    },
+    plotOptions: {
+        series: {
+            colorByPoint: true
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Cashless'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Cashless',
+        data: [4153098, 3446660	, 4578846, 3293909],
+        color: '#eb547c'
+    }, {
+        name: 'Re-embossment',
+        data: [4077565, 2000464, 4098152, 3073046],
+        color: '#247ba0'
+    }]
+});
+
+Highcharts.chart('container1', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Member Report'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: [
+            '2015',
+            '2016',
+            '2017',
+            '2018'
+        ],
+        crosshair: true
+    },
+    plotOptions: {
+        series: {
+            colorByPoint: true
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Enrollment Report'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Main Members ',
+        data: [1037, 1076	, 1139, 1171],
+        color: '#f7a35d'
+    }, {
+        name: 'Dependents ',
+        data: [3167, 2697, 3049, 3127],
+        color: '#86e479'
+    }]
+});
+Highcharts.chart('container2', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Member Report'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: [
+            '2015',
+            '2016',
+            '2017',
+            '2018'
+        ],
+        crosshair: true
+    },
+    plotOptions: {
+        series: {
+            colorByPoint: true
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Enrollment Report'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'Main Members ',
+        data: [188, 234	, 211, 199],
+        color: '#f7a35d'
+    }, {
+        name: 'Dependents',
+        data: [551, 556, 487, 357],
+        color: '#86e479'
+    }]
+});
+
+
+// Create the chart
+Highcharts.chart('container3', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Claim Statistical Report'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        type: 'category',
+        labels: {
+            rotation: -45,
+            style: {
+                fontSize: '12px',
+                fontFamily: 'Montserrat-Regular',
+                color:'#22178c'
+            }
+        }
+    },
+    yAxis: {
+        title: {
+            text: 'Total Claims'
+        }
+
+    },
+    legend: {
+        enabled: false
+    },
+    plotOptions: {
+        series: {
+            borderWidth: 0,
+            dataLabels: {
+                enabled: true,
+                format: '{point.y:.1f}'
+            }
+        }
+    },
+
+    tooltip: {
+        headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+        pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}</b><br/><span style="color:{point.color}">{point.name1}</span>: <b>{point.y1:.2f}</b><br/><span style="color:{point.color}">{point.name2}</span>: <b>{point.y2:.2f}</b><br/>',
+
+    },
+
+    "series": [
+        {
+            "name": "Claim Statistical Report",
+            "colorByPoint": true,
+            "data": [
+                {
+                    "name": "Cashless<br />Report",
+                    "name1": "Claimed Amount",
+                    "name2": "Settled Amount",
+                    "y": 9,
+                    "y1":605925,
+                    "y2":0,
+                    "drilldown": "Cashless Report"
+                },
+                {
+                    "name": "Query<br />Pending",
+                    "name1": "Claimed Amount",
+                    "name2": "Settled Amount",
+                    "y": 0,
+                    "y1":0,
+                    "y2":0,
+                    "drilldown": "Query Pending"
+                },
+                {
+                  "name": "Case<br />Investigation	",
+                  "name1": "Claimed Amount",
+                  "name2": "Settled Amount",
+                  "y": 0,
+                  "y1":0,
+                  "y2":0,
+                  "drilldown": "Case Investigation"
+                },
+                {
+                  "name": "Under<br />Process",
+                  "name1": "Claimed Amount",
+                  "name2": "Settled Amount",
+                  "y": 0,
+                  "y1":0,
+                  "y2":0,
+                  "drilldown": "Under Process"
+                },
+                {
+                  "name": "Rejected",
+                  "name1": "Claimed Amount",
+                  "name2": "Settled Amount",
+                  "y": 30,
+                  "y1":1625494,
+                  "y2":0,
+                  "drilldown": "Rejected"
+                },
+                {
+                  "name": "Claims<br />Settled",
+                  "name1": "Claimed Amount",
+                  "name2": "Settled Amount",
+                  "y": 570,
+                  "y1":43873735,
+                  "y2":32402857,
+                  "drilldown": "Claims Settled"
+                }
+            ]
+        }
+    ]
+});
+</script>
+<script type="text/javascript">
+ $(document).ready(function () {
+	 $('.selectpicker').selectpicker({
+		'selectedText': 'Select'
+	});
+});
+</script>
+<script type="text/javascript">
+           $(document).ready(function () {
+               $("#sidebar").mCustomScrollbar({
+                   theme: "minimal"
+               });
+
+               $('#sidebar ul').first().removeClass().addClass('list-unstyled components');
+
+               $('#dismiss, .overlay').on('click', function () {
+                   $('#sidebar').removeClass('active');
+                   $('.overlay').fadeOut();
+               });
+
+               $('#sidebarCollapse').on('click', function () {
+                   $('#sidebar').addClass('active');
+                   $('.overlay').fadeIn();
+                   $('.collapse.in').toggleClass('in');
+                   $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+               });
+               $('.wrapper,#sidebarCollapse').click(function (event) {
+                   if (event.target.className != 'dropdown-toggle')
+                   event.stopPropagation();
+               });
+               $('body,html').click(function (e) {
+
+                   if (e.target.className != 'dropdown-toggle')
+                   {
+                       $('#sidebar').removeClass('active');
+                       $('.overlay').fadeOut();
+                   }
+
+               });
+
+               $(".n_scroll").niceScroll({ cursorwidth: '6px', autohidemode: false, zindex: 999 });
+               $(".n_scroll1").niceScroll({ cursorwidth: '6px', autohidemode: true, zindex: 999 });
+
+
+               $(".list-unstyled").find('li').each(function (){
+
+                   var curent = $(this);
+                   var item = curent.find('a').first();
+
+                   switch (item.html())
+                   {
+                       case "Dashboard"|| "Home":
+
+                           item.html("<i class='fas fa-home'>").append('Dashboard');
+                           break;
+                       case  "Home":
+                           item.html("<i class='fas fa-home'>").append('Home');
+                           break;
+                       case 'Claims<span class="caret"></span>':
+
+                           item.html("<i class='far fa-newspaper'>").append('Claims');
+                           break;
+                       case "Network Hospitals":
+
+                           item.html("<i class='fas fa-hospital'>").append('Network Hospitals');
+                           break;
+                       case "I-Flex":
+
+                           item.html("<i class='fas fa-users'>").append('I-Flex');
+                           break;
+                       case "Change Password":
+
+                           item.html("<i class='fas fa-lock-open'>").append('Change Password');
+                           break;
+                       case "Logout":
+
+                           item.html("<i class='fas fa-sign-out-alt'>").append('Logout');
+                           break;
+
+                       case "My Ecard Employees":
+
+                           item.html("<i class='fas fa-users'>").append('My Ecard Employees');
+                           break;
+                       case "Ecard":
+
+                           item.html("<i class='fas fa-address-card'>").append('Ecard');
+                           break;
+                       case 'ClaimsHR':
+
+                           item.html("<i class='far fa-newspaper'>").append('ClaimsHR');
+                           break;
+                   }
+               });
+           });
+
+</script>
+   </body>
+   </html>

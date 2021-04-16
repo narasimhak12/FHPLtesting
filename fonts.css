@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('fonts/fontawesome-webfont.eot?v=4.5.0');
+	src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rage';
+	src: url('fonts/RageItalic.eot');
+	src: url('fonts/RageItalic.ttf');
+	src: url('fonts/RageItalic.otf') format('embedded-opentype'), url('fonts/RageItalic.woff') format('woff'), url('fonts/RageItalic.otf') format('OpenType'), url('fonts/RageItalic.ttf') format('truetype'), url('fonts/RageItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url('fonts/Montserrat-Light.eot');
+	src: url('fonts/Montserrat-Light.ttf');
+	src: url('fonts/Montserrat-Light.otf') format('embedded-opentype'), url('fonts/Montserrat-Light.woff') format('woff'), url('fonts/Montserrat-Light.otf') format('OpenType'), url('fonts/Montserrat-Light.ttf') format('truetype'), url('fonts/Montserrat-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url('fonts/Montserrat-Regular.eot');
+	src: url('fonts/Montserrat-Regular.ttf');
+	src: url('fonts/Montserrat-Regular.otf') format('embedded-opentype'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.otf') format('OpenType'), url('fonts/Montserrat-Regular.ttf') format('truetype'), url('fonts/Montserrat-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url('fonts/Montserrat-Medium.eot');
+	src: url('fonts/Montserrat-Medium.ttf');
+	src: url('fonts/Montserrat-Medium.otf') format('embedded-opentype'), url('fonts/Montserrat-Medium.woff') format('woff'), url('fonts/Montserrat-Medium.otf') format('OpenType'), url('fonts/Montserrat-Medium.ttf') format('truetype'), url('fonts/Montserrat-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('fonts/Montserrat-Bold.eot');
+	src: url('fonts/Montserrat-Bold.ttf');
+	src: url('fonts/Montserrat-Bold.otf') format('embedded-opentype'), url('fonts/Montserrat-Bold.woff') format('woff'), url('fonts/Montserrat-Bold.otf') format('OpenType'), url('fonts/Montserrat-Bold.ttf') format('truetype'), url('fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat-SemiBold';
+	src: url('fonts/Montserrat-SemiBold.eot');
+	src: url('fonts/Montserrat-SemiBold.ttf');
+	src: url('fonts/Montserrat-SemiBold.otf') format('embedded-opentype'), url('fonts/Montserrat-SemiBold.woff') format('woff'), url('fonts/Montserrat-SemiBold.otf') format('OpenType'), url('fonts/Montserrat-SemiBold.ttf') format('truetype'), url('fonts/Montserrat-SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('fonts/Ubuntu.eof');
+	src: local('☺'), url('fonts/Ubuntu.woff') format('woff'), url('fonts/Ubuntu.ttf') format('truetype'), url('fonts/Ubuntu.svg') format('svg');
+	font-weight: 400;
+	font-style: normal
+}
+
+
+
+@font-face {
+	font-family: 'Ubuntu-Bold';
+	src: url('fonts/Ubuntu-B.eot');
+	src: url('fonts/Ubuntu-B.ttf');
+	src: url('fonts/Ubuntu-B.otf') format('embedded-opentype'), url('fonts/Ubuntu-B.woff') format('woff'), url('fonts/Ubuntu-B.otf') format('OpenType'), url('fonts/Ubuntu-B.ttf') format('truetype'), url('fonts/Ubuntu-B.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu-Medium';
+	src: url('fonts/Ubuntu-M.eot');
+	src: url('fonts/Ubuntu-M.ttf');
+	src: url('fonts/Ubuntu-M.otf') format('embedded-opentype'), url('fonts/Ubuntu-M.woff') format('woff'), url('fonts/Ubuntu-M.otf') format('OpenType'), url('fonts/Ubuntu-M.ttf') format('truetype'), url('fonts/Ubuntu-M.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
